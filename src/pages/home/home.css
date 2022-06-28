@@ -1,0 +1,7 @@
+.home {
+  display: flex;
+}
+.home .homeContainer {
+  background-color: lightblue;
+  flex: 6;
+}/*# sourceMappingURL=home.css.map */
