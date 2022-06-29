@@ -1,5 +1,7 @@
 .sidebar {
   flex: 1;
+  border-right: 0.5px solid rgb(231, 229, 229);
+  min-height: 100vh;
 }
 .sidebar .top {
   height: 50px;
@@ -10,9 +12,62 @@
 .sidebar .top .logo {
   font-size: 20px;
   font-weight: bold;
-  color: aqua;
+  color: rgb(57, 51, 51);
 }
 .sidebar hr {
   height: 0;
-  border: 0.5px solid;
+  border: 0.5px solid rgb(231, 229, 229);
+}
+.sidebar .center {
+  padding-left: 10px;
+}
+.sidebar .center ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar .center ul .title {
+  font-size: 10px;
+  font-weight: bold;
+  color: #999;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.sidebar .center ul li {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  cursor: pointer;
+}
+.sidebar .center ul li:hover {
+  background-color: #999;
+}
+.sidebar .center ul li .icon {
+  font-size: 18px;
+  color: rgb(6, 6, 90);
+}
+.sidebar .center ul li span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  margin-left: 10px;
+}
+.sidebar .bottom {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.sidebar .bottom .colorOption {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border-color: 1px solid rgb(6, 6, 90);
+  cursor: pointer;
+  margin: 5px;
+}
+.sidebar .bottom .colorOption:nth-child(1) {
+  background-color: whitesmoke;
+}
+.sidebar .bottom .colorOption:nth-child(2) {
+  background-color: black;
 }/*# sourceMappingURL=sidebar.css.map */
