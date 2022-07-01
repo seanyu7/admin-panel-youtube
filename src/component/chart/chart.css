@@ -1,4 +1,11 @@
 .chart {
   flex: 3;
   box-shadow: 12px 20px 29px -3px #7c7c7c;
+  color: #7c7c7c;
+}
+.chart .title {
+  margin-bottom: 20px;
+}
+.chart .chartGrid {
+  stroke: lightslategray;
 }/*# sourceMappingURL=chart.css.map */
