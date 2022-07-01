@@ -3,6 +3,7 @@ import Chart from "../../component/chart/Chart";
 import Feature from "../../component/feature/Feature";
 import Navbar from "../../component/navbar/Navbar";
 import Sidebar from "../../component/sidebar/Sidebar";
+import Table from "../../component/table/Table";
 import Widgets from "../../component/widgets/Widgets";
 import "./home.css";
 
@@ -21,6 +22,9 @@ function Home() {
         <div className="charts">
           <Feature/>
           <Chart/>
+        </div>
+        <div className="table">
+          <Table/>
         </div>
       </div>
     </div>
