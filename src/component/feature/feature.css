@@ -37,9 +37,28 @@
   color: #7c7c7c;
   text-align: center;
 }
-.feature .summanry {
+.feature .bottom .summary {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.feature .bottom .summary .item {
+  text-align: center;
+}
+.feature .bottom .summary .item .itemTitle {
+  font-size: 14px;
+  color: #7c7c7c;
+}
+.feature .bottom .summary .item .itemResult {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.feature .bottom .summary .item .itemResult.positive {
+  color: green;
+}
+.feature .bottom .summary .item .itemResult.negative {
+  color: red;
 }/*# sourceMappingURL=feature.css.map */

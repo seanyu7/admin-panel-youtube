@@ -21,7 +21,6 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-
     .featuredChart {
       width: 100px;
       height: 100px;
@@ -42,11 +41,36 @@
       color: #7c7c7c;
       text-align: center;
     }
-  }
-  .summanry {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+    .summary {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .item {
+        text-align: center;
+
+        .itemTitle {
+          font-size: 14px;
+          color: #7c7c7c;
+        }
+
+        .itemResult {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          font-size: 14px;
+
+          &.positive {
+            color: green;
+          }
+
+          &.negative {
+            color: red;
+          }
+        }
+      }
+    }
   }
 }
