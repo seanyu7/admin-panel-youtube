@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../../component/navbar/Navbar";
 import Sidebar from "../../component/sidebar/Sidebar";
 import "./new.css";
 import DriveFolderUploadIcon from "@mui/icons-material/DriveFolderUpload";
 
+
 function New({ inputs, title }) {
+
+  const [file, setFile] = useState("");
+
   return (
     <div className="new">
       <Sidebar />
@@ -16,7 +20,7 @@ function New({ inputs, title }) {
         <div className="bottom">
           <div className="left">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png"
+              src={file ? URL.createObjectURL(file) : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png"}
               alt="photo of user"
             />
           </div>
@@ -28,7 +32,7 @@ function New({ inputs, title }) {
                   Image:
                   <DriveFolderUploadIcon className="icon" />
                 </label>
-                <input type="file" id="file" style={{ display: "none" }} />
+                <input type="file" id="file" onChange={e=>setFile(e.target.files[0])} style={{ display: "none" }} />
               </div>
 
               {inputs.map((input) => (
