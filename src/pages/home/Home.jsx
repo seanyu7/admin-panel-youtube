@@ -3,7 +3,7 @@ import Chart from "../../component/chart/Chart";
 import Feature from "../../component/feature/Feature";
 import Navbar from "../../component/navbar/Navbar";
 import Sidebar from "../../component/sidebar/Sidebar";
-import Table from "../../component/table/Table";
+import Table from "../../component/table/Listing";
 import Widgets from "../../component/widgets/Widgets";
 import "./home.css";
 
@@ -20,11 +20,12 @@ function Home() {
           <Widgets type="balance" />
         </div>
         <div className="charts">
-          <Feature/>
-          <Chart/>
+          <Feature />
+          <Chart title="Last 6 Months (Revenue)" aspect={2/1}/>
         </div>
-        <div className="table">
-          <Table/>
+        <div className="listContainer">
+          <div className="listTitle">Latest Transaction</div>
+          <Table />
         </div>
       </div>
     </div>
