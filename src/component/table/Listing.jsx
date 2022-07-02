@@ -7,71 +7,10 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import { rows } from "../../datatablesource";
+
 
 function Listing() {
-  const rows = [
-    {
-      id: 1143155,
-      product: "Acer",
-      img: "",
-      customer: "",
-      date: "",
-      amount: "",
-      method: "",
-      status: "approved",
-    },
-    {
-      id: 1143156,
-      product: "Acer2",
-      img: "",
-      customer: "",
-      date: "",
-      amount: "",
-      method: "",
-      status: "approved",
-    },
-    {
-      id: 1143157,
-      product: "Acer3",
-      img: "",
-      customer: "",
-      date: "",
-      amount: "",
-      method: "",
-      status: "approved",
-    },
-    {
-      id: 1143158,
-      product: "Acer4",
-      img: "",
-      customer: "",
-      date: "",
-      amount: "",
-      method: "",
-      status: "approved",
-    },
-    {
-      id: 1143159,
-      product: "Acer5",
-      img: "",
-      customer: "",
-      date: "",
-      amount: "",
-      method: "",
-      status: "approved",
-    },
-    {
-      id: 1143160,
-      product: "Acer6",
-      img: "",
-      customer: "",
-      date: "",
-      amount: "",
-      method: "",
-      status: "rejected",
-    },
-  ];
-
   return (
     <TableContainer component={Paper} className="table">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
