@@ -1,23 +1,36 @@
 import React from "react";
 import "./datatable.css";
 import { DataGrid } from "@mui/x-data-grid";
-import {userColumns,rows} from "../../datatablesource"
-
+import { userColumns, rows } from "../../datatablesource";
+import { Link } from "react-router-dom";
 
 function Datatable() {
-const actionColumn = [{field:"action", headerName:"Action", width:200, renderCell:()=>{
-    return(
-<div className="cellAction">
-    <button className="viewButton">View</button>
-    <button className="deleteButton">Delete</button>
-</div>
-    )
-}}]
-
-
+  const actionColumn = [
+    {
+      field: "action",
+      headerName: "Action",
+      width: 200,
+      renderCell: () => {
+        return (
+          <div className="cellAction">
+            <Link to="/users/test" style={{ textDecoration: "none" }}>
+              <button className="viewButton">View</button>
+            </Link>
+            <button className="deleteButton">Delete</button>
+          </div>
+        );
+      },
+    },
+  ];
 
   return (
     <div className="dataTable">
+      <div className="datatabletitle">
+        Add New User
+        <Link to="/users/new" style={{ textDecoration: "none" }} className="link">
+          Add New
+        </Link>
+      </div>
       <DataGrid
         rows={rows}
         columns={userColumns.concat(actionColumn)}
