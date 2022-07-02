@@ -6,10 +6,11 @@ import Single from "./pages/single/Single";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { productInputs, userInputs } from "./formeSource";
+import './style/dark.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app ">
       <BrowserRouter>
         <Routes>
           <Route path="/">
