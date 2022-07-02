@@ -1,1 +1,7 @@
-/*# sourceMappingURL=new.css.map */
+.new {
+  width: 100%;
+  display: flex;
+}
+.new .newContainer {
+  flex: 6;
+}/*# sourceMappingURL=new.css.map */
