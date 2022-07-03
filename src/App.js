@@ -10,7 +10,7 @@ import './style/dark.css';
 
 function App() {
   return (
-    <div className="app ">
+    <div className="app dark">
       <BrowserRouter>
         <Routes>
           <Route path="/">
