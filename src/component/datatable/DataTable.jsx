@@ -3,6 +3,7 @@ import "./datatable.css";
 import { DataGrid } from "@mui/x-data-grid";
 import { userColumns, rows } from "../../datatablesource";
 import { Link } from "react-router-dom";
+import "../../style/dark.css";
 
 function Datatable() {
   const actionColumn = [
@@ -27,11 +28,16 @@ function Datatable() {
     <div className="dataTable">
       <div className="datatabletitle">
         Add New User
-        <Link to="/users/new" style={{ textDecoration: "none" }} className="link">
+        <Link
+          to="/users/new"
+          style={{ textDecoration: "none" }}
+          className="link"
+        >
           Add New
         </Link>
       </div>
       <DataGrid
+        className="datagrid"
         rows={rows}
         columns={userColumns.concat(actionColumn)}
         pageSize={5}
