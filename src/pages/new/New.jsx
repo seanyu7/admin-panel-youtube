@@ -3,7 +3,7 @@ import Navbar from "../../component/navbar/Navbar";
 import Sidebar from "../../component/sidebar/Sidebar";
 import "./new.css";
 import DriveFolderUploadIcon from "@mui/icons-material/DriveFolderUpload";
-
+import "../../style/dark.css"
 
 function New({ inputs, title }) {
 
